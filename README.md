@@ -1,5 +1,7 @@
 # RADIO-Permissions
 
+This Program allows users given a specific role to get access to a private radio channel and logs it with a discord webhook. It is only currently compatible with the ESX framework for FiveM.
+
 Dependencies Needed:
 
 **OPTION 1:** 
