@@ -31,7 +31,7 @@ RegisterCommand('clock', function(source, args)
     local xPlayer = ESX.GetPlayerFromId(_source)
 	if xPlayer.job.name == 'police' or xPlayer.job.name == 'fbi' or xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'mechanic' or xPlayer.job.name == 'doc' then
 		local text = 'You have Clocked In, you can now access Emergency Channels'
-		TriggerClientEvent('esx_clockin:clockduty', source, text,xPlayer.job.name, source)
+		TriggerClientEvent('esx_clockin:clockduty', source, text,xPlayer.job.name)
 		local jobN = xPlayer.job.name
 		if xPlayer.job.name == 'ambulance' then
 			jobN = '🚑' .. '**EMS**' .. '🚒'
@@ -51,7 +51,7 @@ RegisterCommand('clockout', function(source, args)
     local xPlayer = ESX.GetPlayerFromId(_source)
 	if xPlayer.job.name == 'police' or xPlayer.job.name == 'fbi' or xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'mechanic' or xPlayer.job.name == 'doc'  then
 		local text = 'You have Clocked Out, Clock In to Access Emergency Channels'
-		TriggerClientEvent('esx_clockin:clockduty2', source, text,xPlayer.job.name, source)
+		TriggerClientEvent('esx_clockin:clockduty2', source, text,xPlayer.job.name)
 		local jobN = xPlayer.job.name
 		if xPlayer.job.name == 'ambulance' then
 			jobN = '🚑' .. '**EMS**' .. '🚒'
