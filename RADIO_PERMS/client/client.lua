@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('esx_clockin:clockduty')
-AddEventHandler('esx_clockin:clockduty', function(text,job, source)
+AddEventHandler('esx_clockin:clockduty', function(text,job)
 	TriggerEvent('chat:addMessage', {
 			color = { 255, 0, 0},
 			multiline = true,
@@ -28,7 +28,7 @@ AddEventHandler('esx_clockin:clockduty', function(text,job, source)
 end)
 
 RegisterNetEvent('esx_clockin:clockduty2')
-AddEventHandler('esx_clockin:clockduty2', function(text,job,source)
+AddEventHandler('esx_clockin:clockduty2', function(text,job)
 	TriggerEvent('chat:addMessage', {
 			color = { 255, 0, 0},
 			multiline = true,
