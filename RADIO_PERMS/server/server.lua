@@ -48,7 +48,7 @@ end)
 
 RegisterCommand('clockout', function(source, args)
     local _source = source
-    local xPlayer = ESX.GetPlayerFromId(_source)
+    local xPlayer = ESX.GetPlayerFromId(_source) 
 	if xPlayer.job.name == 'police' or xPlayer.job.name == 'fbi' or xPlayer.job.name == 'ambulance' or xPlayer.job.name == 'mechanic' or xPlayer.job.name == 'doc'  then
 		local text = 'You have Clocked Out, Clock In to Access Emergency Channels'
 		TriggerClientEvent('esx_clockin:clockduty2', source, text,xPlayer.job.name)
