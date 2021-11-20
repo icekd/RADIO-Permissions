@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 game 'gta5'
 
-author ''
+author 'icekd'
 description 'Clock In Script for PMA Voice/Mumble VOIP & RP Radio'
 version '1.0'
 
